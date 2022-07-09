@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.errors}}
+    <div class="login-form mx-auto mt-1">
+    <h2 class="title text-center">Welcome Back</h2>
+    <div class="input-field">
+        {{form.username.label}}
+        {{form.username}}
+    </div>
+    <div class="input-field">
+        {{form.email.label}}
+        {{form.email}}
+    </div>
+        <div class="input-field">
+        {{form.password1.label}}
+        {{form.password1}}
+    </div>
+    <div class="input">
+        <div>
+        <input type="checkbox" name="" id="remember">
+        <label for="remember">Keep me signed in? </label>
+        </div>
+        <a href="#">forgot your password?</a>
+    </div>
+    <button class="btn login">Sign In</button>
+
+    <div class="user">
+        <p>Don;t have an Account??</p>
+        <a href="{% url 'register' %}" class="btn create">Register</a>
+    </div>
+    </div>
+    </form>
+</div>
+{% endblock %}

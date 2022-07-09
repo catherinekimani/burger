@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div class="container">
+    <div class="login-form mx-auto mt-1">
+    <h2 class="title text-center">Create Account</h2>
+    <div class="input-field">
+        {{form.username.label}}
+        {{form.username}}
+    </div>
+    <div class="input-field">
+        {{form.email.label}}
+        {{form.email}}
+    </div>
+        <div class="input-field">
+        {{form.password1.label}}
+        {{form.password1}}
+    </div>
+        <div class="input-field">
+        {{form.password2.label}}
+        {{form.password2}}
+    </div>
+    <div class="input">
+        <div>
+        <input type="checkbox" name="" id="remember">
+        <label for="remember">Keep me signed in? </label>
+        </div>
+        <a href="#">forgot your password?</a>
+    </div>
+
+    <p class="terms">By Continue, you agree our <strong>Condition of use</strong> and <strong>Privacy Notice</strong>.</p>
+
+    <button class="btn login">Sign Up</button>
+
+    <div class="user">
+        <p>Already have an Account??</p>
+        <a href="{%  url 'login' %}" class="btn create">Login</a>
+    </div>
+    </div>
+</div>
+{% endblock %} 
+
