@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    background:black;
+    background-image: url('/static/images/burger.png');
+    background-size: cover;
+    height: 100vh;
+}
+a{
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#9D6C1B;
+    font-size:.8rem;
+}
+a:hover,a:focus {
+    color:#DB9314;
+}
+
+.login-form{
+    width:500px;
+    background:#141414c2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+    padding:1rem;
+    box-shadow:2px 7px 8px rgba(0,0,0,.3);
+    border-radius:3px;
+    color:white;
+}
+.title{
+    margin-bottom:1rem;
+}
+.input-field {
+    width:100%;
+    padding:0;
+    margin:0;
+}
+.input-field input {
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color: #7C848C;
+    border-bottom:1px solid #9D6C1B;
+    padding:.1rem;
+}
+.input-field input:focus {
+    border-color: #DB9314;
+}
+
+.input {
+    display:flex;
+    font-size:.9rem;
+}
+input[type="checkbox"]{
+    background:transparent;
+    padding:1rem;
+}
+.terms {
+    font-size:.7rem;
+    margin-top:1rem;
+    padding: 0 3rem;
+}
+.terms strong{
+    text-decoration:underline;
+    cursor:pointer;
+}
+.btn {
+    padding:.7rem;
+    border:none;
+    border-radius:3px;
+    font-size:1rem;
+    font-weight:bold;
+    outline:none;
+    cursor:pointer;
+    text-transform:capitalize;
+    transition:.2s ease-in-out;
+    filter:brightness(1);
+}
+.login {
+    background:#DB9314;
+    
+}
+.create{
+    width:100%;
+    font-weight:normal;
+    background-color: white;
+
+}
+.btn:hover {
+    filter: brightness(.8);
+    box-shadow: 2px 5px 8px rgba(0,0,0,.2);
+/*   color:#ccc; */
+}
+.user{
+    
+    text-align: center;
+}
+.user p{
+    padding-bottom:.5rem;
+    font-size:.8rem;
+}
+
+@media screen and (max-width:500px){
+.login-form{
+    width:calc(70% - 1rem);
+    margin:1rem;
+}
+.terms{
+    padding:0;
+}
+}
+@media screen and (max-width:350px){
+.login-form{
+    width:calc(60% - 1rem);
+    margin:1rem;
+}
+.terms{
+    padding:0;
+}
+}
+
