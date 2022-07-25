@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 {% block content %} 
 <div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
     <div class="login-form mx-auto mt-1">
     <h2 class="title text-center">Create Account</h2>
     <div class="input-field">
+        {{form.errors}}
         {{form.username.label}}
         {{form.username}}
     </div>
@@ -36,6 +39,7 @@
         <a href="{%  url 'login' %}" class="btn create">Login</a>
     </div>
     </div>
+    </form>
 </div>
 {% endblock %} 
 

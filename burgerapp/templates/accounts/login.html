@@ -4,10 +4,10 @@
 <div class="container">
     <form action="" method="post">
         {% csrf_token %}
-        {{form.errors}}
     <div class="login-form mx-auto mt-1">
     <h2 class="title text-center">Welcome Back</h2>
     <div class="input-field">
+        {{form.errors}}
         {{form.username.label}}
         {{form.username}}
     </div>
