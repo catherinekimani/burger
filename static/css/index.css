@@ -139,24 +139,23 @@ input[type="checkbox"]{
     background-color: black;
     display: grid;
     margin: 3%;
+    grid-column-gap: 10px;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
     box-shadow: 0 0 10px rgba(121, 142, 160, 0.164);
 }
-
-.navbar svg{
-    width: 30px;
-    color: white;
+.navigation-link{
+    display: inline;
+    margin-top: -10%;
+margin-left: 20%;
+margin-right:20%px;
+margin-left: auto;
 }
 
-.navbar .logo{
-    grid-column: 2/3;
-}
 
 .navbar .menu {
     width: 100%;
     height:70vh;
-    top: 1rem;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -176,15 +175,13 @@ input[type="checkbox"]{
     font-size: 20px;
 
 }
-
-.navbar .menu-bar{
-    display: block;
-    grid-column: 8/9;
-    cursor: pointer;
+i{
+    color: white;
+    font-size: 20px;
 }
-
-.navbar .shooping{
-    display:none;
+.navbar .menu-bar{
+    
+    cursor: pointer;
 }
 
 .navbar .menu-toggle{
@@ -214,3 +211,8 @@ input[type="checkbox"]{
         margin-top: 0;
     }
 }
+
+.navigation-icons {
+        display: flex;
+        margin-left: 20%;
+    }
