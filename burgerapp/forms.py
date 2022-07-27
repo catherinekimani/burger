@@ -16,3 +16,8 @@ class LoginForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username','password1']
+        
+class UserProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['user_bio','user_profile']
