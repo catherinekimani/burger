@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 
-from .forms import RegisterForm,LoginForm
+from .forms import RegisterForm,LoginForm,UserProfileForm
 
 from django.contrib.auth import login,logout,authenticate
 
@@ -40,3 +40,10 @@ def login_user(request):
             login(request,user)
             return redirect('home')
     return render(request, 'accounts/login.html',{'form':form})
+
+def profile(request):
+    current_user = request.user
+    
+    profile = Profile.objects.filter(user_id = current_user.id).first()
+    
+    return render(request,'profile/profile.html',{"profile":profile})
