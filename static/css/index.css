@@ -161,17 +161,14 @@ nav div {
 
 
 
-i {
-    font-size: 25px;
-}
-
-a:hover {
-    font-size: 1rem;
+i:hover{
     color: #e4950d;
 }
 
+
+
 i:hover {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 h2 {
@@ -228,4 +225,12 @@ hr{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 20%;
+}
+
+.container ,.profile{
+    width: 400px;
+    height: 40vh;
+    background-color: rgb(10, 10, 10);
+    margin-top: 15%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
