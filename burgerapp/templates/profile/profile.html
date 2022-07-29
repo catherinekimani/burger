@@ -6,14 +6,14 @@
     <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
 {% endblock %}
-<div class="bg">
+<div class="profilebg">
 <div class="container profile text-light">
     {% if user.profile.user_profile %}
-    <img src="{{user.profile.user_profile}}" alt="">
+    <img src="{{user.profile.user_profile.url}}" alt=""class="img-fluid w-25 d-block mx-auto mt-2">
     <p><i>Username: {{user.username}}</i></p>
-    <p><i>Bio: {{user.user_bio}}</i></p>
-    <p><i>Contact: {{user.user_contact}}</i></p>
-    <p><i>Location: {{user.user_location}}</i></p>
+    <p><i>Bio: {{user.profile.user_bio}}</i></p>
+    <p><i>Contact: {{user.profile.user_contact}}</i></p>
+    <p><i>Location: {{user.profile.location}}</i></p>
     {% else %}
     <h4 style="color:#e4950d ;" class="text-center">My Profile </h4>
     <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" class="img-fluid w-25 d-block mx-auto mt-2" >
@@ -21,7 +21,7 @@
     <p><i>Bio: {{user.user_bio}}</i></p>
     <p><i>Contact: {{user.user_contact}}</i></p>
     <p><i>Location: {{user.user_location}}</i></p>
-    <a href="" class="btn btn-md btn-info btn-sm" style="margin-top:10% ;">Edit Profile</a>
     {% endif %}
+    <a href="{% url 'editprof' %}" class="btn btn-md btn-info btn-sm" >Edit Profile</a>
 </div>
 </div>
