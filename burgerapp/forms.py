@@ -21,3 +21,9 @@ class UserProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['user_bio','user_profile']
+        
+class ProfileUpdateForm(forms.ModelForm):
+    user_bio = forms.CharField(required=True,widget=forms.TextInput(attrs={'class':'form-control'}))
+    class Meta:
+        model = Profile
+        fields = ['user_bio','user_contact','location','user_profile']
