@@ -46,7 +46,7 @@ def profile(request):
     
     profile = Profile.objects.filter(user_id = current_user.id).first()
     
-    return render(request,'profile/profile.html',{"profile":profile})
+    return render(request,'profile/profile.html',{"profile":profile})       
 
 def editprof(request):
     Profile.objects.get_or_create(user=request.user)
@@ -61,3 +61,7 @@ def editprof(request):
         form = UserCreationForm(instance = request.user)
         form = ProfileUpdateForm(instance = request.user.profile)
     return render(request,'profile/editprof.html',{'form':form})
+
+def logout_user(request):
+    logout (request)
+    return redirect('login')        
