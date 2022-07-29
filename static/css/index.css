@@ -48,14 +48,16 @@ a:hover,a:focus {
     background:transparent;
     border:none;
     outline:none;
-    color: #7C848C;
+    color: white;
     border-bottom:1px solid #9D6C1B;
     padding:.1rem;
 }
 .input-field input:focus {
     border-color: #DB9314;
 }
-
+p { 
+    word-spacing: 5px;
+}
 .input {
     display:flex;
     font-size:.9rem;
@@ -228,9 +230,31 @@ hr{
 }
 
 .container ,.profile{
-    width: 400px;
+    width: 500px;
     height: 40vh;
-    background-color: rgb(10, 10, 10);
-    margin-top: 15%;
+    background:black;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* profile */
+.edit{
+    width:500px;
+    background:#141414c2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+    padding:1rem;
+    box-shadow:2px 7px 8px rgba(0,0,0,.3);
+    border-radius:3px;
+    color:white;
+}
+.profilebg {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    background:rgb(245, 244, 239);
+    background-size: cover;
+    height: 100vh;
 }
