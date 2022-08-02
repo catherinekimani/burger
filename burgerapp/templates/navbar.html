@@ -10,8 +10,8 @@
         </div>
         {% if user.is_authenticated %}
         <div class="links">
-            <a href="{% url 'profile' %}"><i class="fas fa-shopping-cart"></i></a>
-            <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a href=""><i class="fas fa-shopping-cart"></i></a>
+            <a href="{% url 'profile' %}"><i class="fa fa-user" aria-hidden="true"></i></a>
             <a href="{% url 'logout' %}" id="signout" class="navigation-link">
             <i class="fas fa-sign-out-alt"></i>
         </a>

@@ -14,6 +14,7 @@ from .models import *
 
 # Create your views here.
 
+@login_required(login_url='/login/')
 def home(request):
     return render(request,'index.html')
 
