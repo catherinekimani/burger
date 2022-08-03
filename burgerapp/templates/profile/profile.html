@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
 {% endblock %}
+<div class="pro">
+{% include 'navbar.html'%}
 <div class="profilebg">
 <div class="container profile text-light">
     {% if user.profile.user_profile %}
@@ -23,5 +25,6 @@
     <p><i>Location: {{user.user_location}}</i></p>
     {% endif %}
     <a href="{% url 'editprof' %}" class="btn btn-md btn-info btn-sm" >Edit Profile</a>
+</div>
 </div>
 </div>
