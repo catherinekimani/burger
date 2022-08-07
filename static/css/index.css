@@ -1,136 +1,162 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .image {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    background:black;
+    background: black;
     background-image: url('/static/images/burger.png');
     background-size: cover;
     height: 100vh;
 }
-a{
-    text-decoration:none;
-    text-transform:capitalize;
-    color:#9D6C1B;
-    font-size:.8rem;
-}
-a:hover,a:focus {
-    color:#DB9314;
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #9D6C1B;
+    font-size: .8rem;
 }
 
-.login-form{
-    width:500px;
-    background:#141414c2;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap:1rem;
-    padding:1rem;
-    box-shadow:2px 7px 8px rgba(0,0,0,.3);
-    border-radius:3px;
-    color:white;
+a:hover,
+a:focus {
+    color: #DB9314;
 }
-.title{
-    margin-bottom:1rem;
-}
-.input-field {
-    width:100%;
-    padding:0;
-    margin:0;
-}
-.input-field input {
-    width:100%;
-    background:transparent;
-    border:none;
-    outline:none;
+
+.login-form {
+    width: 500px;
+    background: #141414c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 7px 8px rgba(0, 0, 0, .3);
+    border-radius: 3px;
     color: white;
-    border-bottom:1px solid #9D6C1B;
-    padding:.1rem;
 }
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.input-field input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid #9D6C1B;
+    padding: .1rem;
+}
+
 .input-field input:focus {
     border-color: #DB9314;
 }
-p { 
+
+p {
     word-spacing: 5px;
 }
+
 .input {
-    display:flex;
-    font-size:.9rem;
+    display: flex;
+    font-size: .9rem;
 }
-input[type="checkbox"]{
-    background:transparent;
-    padding:1rem;
+
+input[type="checkbox"] {
+    background: transparent;
+    padding: 1rem;
 }
+
 .terms {
-    font-size:.7rem;
-    margin-top:1rem;
+    font-size: .7rem;
+    margin-top: 1rem;
     padding: 0 3rem;
 }
-.terms strong{
-    text-decoration:underline;
-    cursor:pointer;
+
+.terms strong {
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 .btn {
-    padding:.7rem;
-    border:none;
-    border-radius:3px;
-    font-size:1rem;
-    font-weight:bold;
-    outline:none;
-    cursor:pointer;
-    text-transform:capitalize;
-    transition:.2s ease-in-out;
-    filter:brightness(1);
+    padding: .7rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s ease-in-out;
+    filter: brightness(1);
 }
+
 .login {
-    background:#DB9314;
-    
+    background: #DB9314;
+
 }
-.create{
-    width:100%;
-    font-weight:normal;
+.btn{
+    background: #DB9314;
+
+}
+.create {
+    width: 100%;
+    font-weight: normal;
     background-color: white;
 
 }
+
 .btn:hover {
     filter: brightness(.8);
-    box-shadow: 2px 5px 8px rgba(0,0,0,.2);
-/*   color:#ccc; */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, .2);
+    /*   color:#ccc; */
 }
-.user{
-    
+
+.user {
+
     text-align: center;
 }
-.user p{
-    padding-bottom:.5rem;
-    font-size:.8rem;
+
+.user p {
+    padding-bottom: .5rem;
+    font-size: .8rem;
 }
 
-@media screen and (max-width:500px){
-.login-form{
-    width:calc(70% - 1rem);
-    margin:1rem;
-}
-.terms{
-    padding:0;
-}
-}
-@media screen and (max-width:350px){
-.login-form{
-    width:calc(60% - 1rem);
-    margin:1rem;
-}
-.terms{
-    padding:0;
-}
+@media screen and (max-width:500px) {
+    .login-form {
+        width: calc(70% - 1rem);
+        margin: 1rem;
+    }
+
+    .terms {
+        padding: 0;
+    }
 }
 
-.container,.main{
+@media screen and (max-width:350px) {
+    .login-form {
+        width: calc(60% - 1rem);
+        margin: 1rem;
+    }
+
+    .terms {
+        padding: 0;
+    }
+}
+
+.container,
+.main {
     background-color: black;
     width: 100%;
     height: 100vh;
@@ -157,13 +183,13 @@ nav div {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 20vw;
+    width: 30vw;
     margin: 1vh;
 }
 
 
 
-i:hover{
+i:hover {
     color: #e4950d;
 }
 
@@ -178,26 +204,29 @@ h2 {
     margin: 0;
     color: white;
 }
-span{
+
+span {
     color: #e4950d;
 }
 
-h1{
+h1 {
     font-size: 18rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
 .carousel-control-prev span.carousel-control-prev-icon,
 .carousel-control-next span.carousel-control-next-icon {
     background-color: rgb(247, 184, 12);
     color: black;
 }
 
-.follows i{
-    padding-bottom:2px;
+.follows i {
+    padding-bottom: 2px;
     color: white;
 }
-.kay h2{
+
+.kay h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #e4950d;
     font-weight: bold;
@@ -205,61 +234,148 @@ h1{
     font-size: 2rem;
 }
 
-hr{
+hr {
     border: 2px solid rgb(248, 142, 5);
     width: 30%;
     margin-left: auto;
 }
 
-.kay p{
+.kay p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-style: italic;
     margin-left: 10%;
 }
-.kay a{
+
+.kay a {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 10%;
 }
 
-.kay .share{
+.kay .share {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 20%;
 }
 
-.container ,.profile{
+.container,
+.profile {
     width: 500px;
     height: 50vh;
-    background:black;
+    background: black;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /* profile */
-.edit{
-    width:500px;
-    background:#141414c2;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap:1rem;
-    padding:1rem;
-    box-shadow:2px 7px 8px rgba(0,0,0,.3);
-    border-radius:3px;
-    color:white;
+.edit {
+    width: 500px;
+    background: #141414c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 7px 8px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    color: white;
 }
+
 .profilebg {
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    background:rgb(19, 19, 18);
+    background: rgb(19, 19, 18);
     background-size: cover;
     height: 95vh;
     overflow: hidden;
 }
 
-.pro{
+.pro {
     background-color: black;
+}
+
+/* burger template styling */
+
+
+.burger h2 {
+    font-size: 5rem;
+}
+
+.card {
+    border: none;
+    margin: 25px auto;
+    background-color: black;
+
+
+}
+
+.burger {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card-img-top {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+}
+
+.burger-detail {
+    position: absolute;
+    height: 70px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    overflow: hidden;
+    padding: 15px;
+    /* From https://css.glass */
+background: rgba(19, 2, 2, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(19, 2, 2, 0.3);
+    transition: all 0.5s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card .burger-detail h5 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+    color: white;
+
+}
+
+.card .burger-detail .subheading {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+}
+
+.card .burger-detail blockquote {
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    font-size: 1em;
+    color: white;
+
+}
+
+.card:hover .burger-detail {
+    height: calc(82%);
+    padding-top: 100px;
+}
+.back i{
+    font-size: 3rem;
+    color: white;
+    margin-left: 8%;
 }
