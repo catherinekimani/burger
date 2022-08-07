@@ -11,4 +11,5 @@ urlpatterns = [
     path('edit',views.editprof,name='editprof'),
     
     path('menu',views.menu,name='menu'),
+    path('popular',views.popular,name='popular'),
 ]

@@ -28,8 +28,13 @@ def register(request):
             return redirect('login')
     return render(request,'accounts/register.html',{'form':form})
 
+# menu
 def menu(request):
     return render(request,'menu.html')
+
+# popular
+def popular(request):
+    return render(request,'popular.html')
 
 def login_user(request):
     form = LoginForm()
