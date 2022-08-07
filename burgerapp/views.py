@@ -28,6 +28,9 @@ def register(request):
             return redirect('login')
     return render(request,'accounts/register.html',{'form':form})
 
+def burgers(request):
+    return render(request,'burgers.html')
+
 def login_user(request):
     form = LoginForm()
     
