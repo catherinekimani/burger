@@ -10,5 +10,5 @@ urlpatterns = [
     path('profile',views.profile,name='profile'),
     path('edit',views.editprof,name='editprof'),
     
-    path('burgers',views.burgers,name='burgers'),
+    path('menu',views.menu,name='menu'),
 ]
