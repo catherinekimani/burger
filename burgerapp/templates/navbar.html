@@ -4,8 +4,9 @@
         </div>
         <div class="links">
             <a href="/">Home</a>
-            <a href="">Menu</a>
-            <a href="">Services</a>
+            <a href="{% url 'menu' %}">Menu</a>
+            <a href="{% url 'popular' %}">Popular</a>
+            <a href="">Drinks</a>
             <a href="">Contact</a>
         </div>
         {% if user.is_authenticated %}
