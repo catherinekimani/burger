@@ -10,3 +10,13 @@ class Profile(models.Model):
     location = models.CharField(max_length=100,blank=True,null=True)
     def __str__(self):
         return f'{self.user} Profile'
+
+# product
+class Product(models.Model):
+    name = models.CharField(max_length=200, blank=False)
+    price = models.IntegerField(default=0, blank=False)
+    description = models.TextField(max_length=600, blank=False)
+    image = CloudinaryField('img')
+
+    def __str__(self):
+        return self.name
