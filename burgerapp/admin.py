@@ -6,7 +6,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display=['name','price']
     
     def image_tag(self, obj):
-        return format_html('<img src="{}" width="auto" height="380px" />'.format(obj.image.url))
+        return format_html('<img src="{}"  height="380px" />'.format(obj.image.url))
     image_tag.short_description = 'Product Image Preview'
     readonly_fields = ['image_tag']
 # Register your models here.

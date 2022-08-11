@@ -30,11 +30,13 @@ def register(request):
 
 # menu
 def menu(request):
-    return render(request,'menu.html')
+    product = Product.objects.all()
+    return render(request,'menu.html',{'product':product})
 
 # popular
 def popular(request):
-    return render(request,'popular.html')
+    product = Product.objects.all()
+    return render(request,'popular.html',{'product':product})
 
 def login_user(request):
     form = LoginForm()
